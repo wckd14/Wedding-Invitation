@@ -85,21 +85,16 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 29th Nov, 2020!', styles);
+console.log('\n\n%c SAVE THE DATE: 27th Jan, 2022!', styles);
 
-console.log('%cYour presence is requested!%c\n\nRegards: Vinit Shahdeo', styles1, styles2);
-
-console.log(
-    `%cShaadi me zaroor aana!\n\n`,
-    'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
-)
+console.log('%cYour presence is requested!%c', styles1, styles2);
 
 $('#answer-example-share-button').on('click', () => {
     if (navigator.share) {
       navigator.share({
           title: 'Wedding Invitation | 27th Jan',
-          text: 'Take a look at this spec!',
-          url: 'https://wicg.github.io/web-share/#share-method',
+          text: 'Wedding Invitation | Jan 27 | Sree Narayana Hall, Vatakara',
+          url: 'https://nonavivek.life/',
         })
         .then(() => console.log('Successful share'))
         .catch((error) => console.log('Error sharing', error));

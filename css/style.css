@@ -601,3 +601,8 @@ a {
 	font-size: 12px;
 	letter-spacing: 0pt;
 }
+
+.btclass{
+	width: 40px;
+	filter: invert(12%) sepia(40%) saturate(7402%) hue-rotate(333deg) brightness(77%) contrast(110%);
+}
